@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #292C3D;
+}
+
+.head {
+    background-color: #353A50;
+    height: 110px;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    padding: 30px; /* Espacio alrededor de los contenedores */
+}
+
+.container {
+    width: 400px;       
+    height: 200px;      
+    background-color: #353A50; 
+    border: 2px ; 
+    border-radius: 5px;  
+    margin-top: 20px;
+    margin-left: 440px;
+}
+
+.container_2 {
+    background-color: #353A50;
+    margin-top: 20px;
+    border: 2px ; 
+    border-radius: 5px;  
+    width: 490px;
+    height: 640px;
+}
+
+
+
+
+
+
+
+
+

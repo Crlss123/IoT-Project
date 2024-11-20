@@ -98,4 +98,8 @@ body {
   float: right;
 
 }
+.barra-login:hover {
+  background: rgb(184, 184, 184);
+  color: white;
+}
 

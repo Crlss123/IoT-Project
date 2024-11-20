@@ -1,6 +1,8 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
+
 }
 
 .head {
@@ -40,6 +42,7 @@
     padding: 30px;
     background-color: #292C3D;
 }
+
 
 
 

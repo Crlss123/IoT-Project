@@ -8,37 +8,46 @@
 </head>  
 <body>
     <header class="head">
+        <div class="logo_container">
+            <img class="logo" src="img/logodashboard_porlak.png" alt="Logo dashboard Porlak">
+        </div>
         <a href="login-porlak.html">
             <div class="logo_container">
-                    <img class="logo" src="img/logo_porlak.png" alt="Logo Porlak">
+                <img class="logo_logout" src="img/logo_logout.png" alt="Logo Log Out">
             </div>
         </a>
     </header>
-    <section class="sec1">
-        <div>
-            <div class="container" id="temperatura"> 
-                <div class="texto">
-                    TEMPERATURA
+    <div class="background">
+        <div class="container">
+            <div class="container_botella">
+                <img class="botella" src="/img/botella.png" alt="botella">
+            </div>
+            <div class="item">
+                <div id="tempContainer">
+                    <div id="tempFill" style="background: red; height: 0%;"></div>
+                    <p>Temperatura: <span id="tempValue">0</span>°C</p>
                 </div>
             </div>
-            <div class="container" id="humedad">
-                <div class="texto">
-                    HUMEDAD
+            <div class="item">
+                <div id="humContainer">
+                    <div id="humNeedle" style="transform: rotate(-90deg);"></div>
+                    <p>Humedad: <span id="humValue">0</span>%</p>
                 </div>
             </div>
-            <div class="container" id="luz">
-                <div class="texto">
-                    NIVEL DE LUZ
+            <div class="item">
+                <div id="lightContainer">
+                    <div id="lightNeedle" style="transform: rotate(-90deg);"></div>
+                    <p>Luz: <span id="lightValue">0</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <div id="distContainer">
+                    <div id="distFill" style="background: blue; height: 0%;"></div>
+                    <p>Distancia: <span id="distValue">0</span> cm</p>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="container_2" id="alertas">
-                <div class="texto">
-                    ALERTAS
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+    <script src="dashboard_script.js"></script>
 </body>
 </html>

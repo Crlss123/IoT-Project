@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Absans";
+  src: url("https://db.onlinewebfonts.com/t/64b67efbf9af449b872c8159a5857852.eot");
+  src: url("https://db.onlinewebfonts.com/t/64b67efbf9af449b872c8159a5857852.eot?#iefix") format("embedded-opentype"),
+       url("https://db.onlinewebfonts.com/t/64b67efbf9af449b872c8159a5857852.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/64b67efbf9af449b872c8159a5857852.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/64b67efbf9af449b872c8159a5857852.ttf") format("truetype"),
+       url("https://db.onlinewebfonts.com/t/64b67efbf9af449b872c8159a5857852.svg#Absans") format("svg");
+}
+
 * {
   box-sizing: border-box;
   overflow: hidden;
@@ -6,25 +16,32 @@
   border: 0;
 }
 
-.image-background{
+.image-background {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  background-image: url(img/Porlak.png);
+  background-image: url('img/Porlak.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.login-box{
+body {
+  font-family: "Absans", sans-serif;
+}
+
+.login-box {
   margin: 100px;
   padding: 30px 50px 50px 50px;
   border-radius: 10px;
-  background-color: rgba(31, 31, 35, 0.572);
+  background-color: #3141528f;
   display: flex;
   flex-direction: column;
 }
 
-.logo{
+.logo {
   display: flex;
   margin: 5px;
   padding: 5px;
@@ -32,20 +49,20 @@
   width: auto;
 }
 
-.login-text{
+.login-text {
   margin-top: 5px;
   margin-bottom: 2px;
   color: white;
-  font-family: sans-serif;
+  font-family: "Absans", sans-serif; 
   text-align: center;
 }
 
-.restaurar-link{
+.restaurar-link {
   margin-top: 5px;
   margin-bottom: 2px;
   color: white;
   font-size: 10px;
-  font-family: sans-serif;
+  font-family: "Absans", sans-serif; 
   text-align: center;
 }
 
@@ -54,13 +71,31 @@
   padding: 15px 8px;
   font-size: 16px;
   margin: 7px 10px;
-  color: rgb(47, 39, 39)
-}
-
-.barra-contraseña{
+  color: rgb(47, 39, 39);
+  border-radius: 2px;
+  font-family: "Absans", sans-serif; 
+} 
+.barra-contraseña {
   background-color: rgb(184, 184, 184);
   padding: 15px 8px;
   font-size: 16px;
   margin: 7px 10px;
-  color: rgb(47, 39, 39)
+  color: rgb(47, 39, 39);
+  border-radius: 2px;
+  font-family: "Absans", sans-serif; 
 }
+
+.barra-login {
+  background-color: rgb(184, 184, 184);
+  padding: 10px 4px;
+  font-size: 12px;
+  margin: 10px 10px;
+  color: #434f5cd2;
+  border-radius: 2px;
+  font-family: "Absans", sans-serif;
+  align-content: center;
+  width: 85px;
+  float: right;
+
+}
+

@@ -4,6 +4,7 @@
     overflow: hidden;
 }
 
+
 .head {
     display: flex;
     align-items: center;
@@ -13,33 +14,170 @@
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 190px;
+    height: 60px;
+
+
+}
+.logo_logout{
+    width: 40px;
+    height: 30px;
+    margin-bottom: 8px;
+    margin-left: 1150px;
 }
 
-
-.container {
-    width: 400px;
-    height: 200px;
+.item {
+    width: 300px;
+    height: 370px;
     background-color: #353A50;
-    border-radius: 5px;
-    margin: 20px auto;
-    margin-left: 440px;
+    border-radius: 15px;
+    border: 1px solid rgb(184, 184, 184);
 }
 
-.container_2 {
-    background-color: #353A50;
-    margin: 20px auto;
-    border-radius: 5px;
-    width: 490px;
-    height: 640px;
-}
-
-.sec1 {
+.container{
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
+    gap: 20px;
+    flex-direction: row ;
+    margin-left: 350px;
+    margin-top: 70px;
+}
+.container_botella{
+    transform: translate(-300px);
+    position: absolute;
+    width: 300px;
+    height: 370px;
+    gap: 90px;
+    margin-left: -50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.botella{
+    height: 380px;
+    width: 100px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 80px;
+}
+
+.background {
+    padding: 80px;
     background-color: #292C3D;
+    height: 100vh;
+}
+
+.texto{
+    color: #f5f6ff;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 800;
+    font-style: 500px;
+    font-size: 20px;
+    align-items: center ;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h2 { color: #333; }
+
+/* Contenedor para los sensores en paralelo */
+.sensor-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+/* Termómetro */
+.thermometer {
+    width: 40px;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+.thermometer .fill {
+    width: 100%;
+    background-color: #e74c3c;
+    transition: height 0.5s ease;
+}
+.thermometer-label {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Medidor de Humedad y Luz con Aguja */
+.gauge-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gauge-container .needle {
+    position: absolute;
+    width: 4px;
+    height: 50%;
+    background-color: #e74c3c;
+    transform-origin: bottom center;
+    transition: transform 0.5s ease;
+}
+.gauge-label {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+.gauge-markers {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 2px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+/* Tanque */
+.tank {
+    width: 80px;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+.tank .fill {
+    width: 100%;
+    background-color: #27ae60;
+    transition: height 0.5s ease;
+}
+.tank-label {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 .cuello-botella { 
     width: 50px;       

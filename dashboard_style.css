@@ -57,7 +57,7 @@
     width: 100px;
     overflow: hidden;
     position: relative;
-    margin-left: 80px;
+    margin-left: 0px;
 }
 
 .background {
@@ -75,26 +75,6 @@
     font-style: 500px;
     font-size: 20px;
     align-items: center ;
-}
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-h2 { color: #333; }
-
-/* Contenedor para los sensores en paralelo */
-.sensor-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    width: 100%;
-    max-width: 1000px;
-    flex-wrap: wrap;
 }
 
 /* Termómetro */
@@ -237,5 +217,6 @@ h2 { color: #333; }
         height: 0%; /* Vuelve a vaciarse */
     }
 }
+
 
 
